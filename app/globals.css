@@ -1,0 +1,24 @@
+:root { --bg:#0b1220; --card:#0f172a; --fg:#e2e8f0; --muted:#94a3b8; --accent:#16a34a; --danger:#ef4444; }
+:root.light { --bg:#f8fafc; --card:#ffffff; --fg:#0f172a; --muted:#64748b; --accent:#16a34a; --danger:#ef4444; }
+*{ box-sizing:border-box; }
+html, body { height:100%; }
+body { margin:0; background:var(--bg); color:var(--fg); font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans; }
+.container { max-width: 480px; margin: 0 auto; padding: 18px; }
+.card { background: var(--card); border-radius: 20px; box-shadow: 0 10px 24px rgba(0,0,0,.25); padding: 18px; margin-bottom: 16px; }
+h1,h2,h3 { margin: 0 0 8px; }
+button, a.btn { border: 0; border-radius: 16px; padding: 16px 18px; font-weight: 800; text-decoration: none; display: inline-block; text-align: center; }
+.btn-green { background: var(--accent); color: #fff; }
+.btn-ghost { background: rgba(255,255,255,0.06); color: var(--fg); }
+.btn-danger { background: var(--danger); color: #fff; }
+.input, .select, .textarea { width: 100%; padding: 12px 14px; border-radius: 12px; border: 1px solid rgba(148,163,184,0.25); background: rgba(255,255,255,0.06); color: var(--fg); }
+.row { display:flex; gap:10px; }
+.grid2 { display:grid; grid-template-columns: 1fr 1fr; gap:10px; }
+.center { text-align:center; }
+.small { color: var(--muted); font-size: 12px; }
+.badge { display:inline-block; padding:6px 10px; border-radius:999px; background: rgba(148,163,184,.2); color: var(--fg); font-size: 12px; }
+.timer-circle { width: 220px; height: 220px; border-radius: 9999px; border: 12px solid rgba(22,163,74,.25); display:flex; align-items:center; justify-content:center; margin: 12px auto; }
+.timer-digits { font-size: 64px; font-family: monospace; }
+hr.sep { border: 0; height: 1px; background: rgba(148,163,184,.2); margin: 12px 0; }
+.fullscreen { position: fixed; inset: 0; background: var(--bg); z-index: 40; padding: 18px; }
+.topbar { display:flex; align-items:center; justify-content: space-between; gap: 10px; margin-bottom: 6px; }
+.bottom-gap { height: 16px; }
