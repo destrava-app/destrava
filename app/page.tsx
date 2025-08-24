@@ -1,4 +1,9 @@
+import Link from 'next/link';
+
 export default function Page() {
+  const msg = encodeURIComponent('Testando o Destrava: plano de foco em 2 min.');
+  const wa = `https://wa.me/?text=${msg}`;
+
   return (
     <main>
       <div className="card" style={{textAlign:'center'}}>
@@ -12,21 +17,14 @@ export default function Page() {
       </div>
 
       <div className="card">
-        <h2>Este é um starter PWA</h2>
+        <h2>Testes de links</h2>
         <ul>
-
-          <li>Manifest + Service Worker já configurados</li>
-
-          <li>Instale no celular: Adicionar à Tela de Início</li>
-
-          <li>Edite o conteúdo em <code>app/page.tsx</code></li>
-
+          <li>Interno (Next): <Link href="/sobre">/sobre</Link></li>
+          <li>WhatsApp (externo): <a href={wa} target="_blank" rel="noopener noreferrer">Abrir wa.me</a></li>
+          <li>Trello (externo): <a href="https://trello.com" target="_blank" rel="noopener noreferrer">Abrir Trello</a></li>
         </ul>
+        <p className="small">Em iOS PWA, use <code>target="_blank"</code> para abrir fora do app.</p>
       </div>
-
     </main>
-
   );
-
 }
-

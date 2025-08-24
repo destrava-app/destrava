@@ -1,4 +1,4 @@
-const CACHE_NAME = "destrava-cache-v1";
+const CACHE_NAME = "destrava-cache-v2";
 const APP_SHELL = [
   "/",
   "/manifest.json",
